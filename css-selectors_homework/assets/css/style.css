@@ -1,0 +1,49 @@
+/* 1. */
+[alt^="my"] {
+    border-radius: 50%;
+}
+/* 2 */
+button + button {
+    margin-left: 10px;
+}
+/* 3 */
+.info-container ul + p {
+    color: #34a4eb;
+}
+.info-container>p:nth-child(3) {
+    color: red;
+}
+.info-container>p:nth-child(4)::first-line {
+    color: blue;
+}
+.info-container>p:empty {
+    width: 50px; /* необходимо, за да се визуализират*/
+    height: 10px; /* необходимо, за да се визуализират*/
+    border-bottom-style: dashed ;
+}
+
+.info-container ul li:last-child::first-letter{
+    color: red;
+}
+/* 4 */
+[alt*="puffin"] {
+    box-shadow: 12px 6px 19px 13px #444;
+}
+/* 5 */
+.info-container, .title {
+    border-width: 2px;
+    border-left: 5px;
+    border-style: solid;
+}
+/* 6 */
+.title::before {
+    content: "***";
+}
+.title::after {
+    content: "***";
+}
+
+/* 7 */
+p:hover {
+    color: blue!important;
+}
