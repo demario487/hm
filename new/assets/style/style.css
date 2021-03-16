@@ -1,0 +1,33 @@
+  #about {
+    top: 20px;
+    background-color: #b5f5b8;
+  }
+  
+  #blog {
+    top: 80px;
+    background-color: #a9d3f5; 
+  }
+  
+  #projects {
+    top: 140px;
+    background-color: #e7bdba; 
+  }
+  
+  #contact {
+    top: 200px;
+    background-color: rgb(245, 230, 230) 
+  }
+
+  .btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  
+  .btn:hover {
+    background-color: RoyalBlue;
+  }

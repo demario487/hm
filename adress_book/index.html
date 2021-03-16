@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Book</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <header>
+            <h1>Contact list</h1>
+        </header>
+
+        <!-- Attach functionality for search contacts -->
+        <input 
+        type="search"
+        placeholder="Search names in Address Book"
+        id="globalSearch"
+        onkeyup="globalSearchFunction()"
+        >
+
+        <!-- Make list of names we will search -->
+        <ul
+        id="addressBook">
+        <li><a href="#javascript">Kristiqn Mangelov</a></li>
+        <li><a href="#javascript">Bogomil Dimitrov</a></li>
+        <li><a href="#javascript">Velichka Damqnova</a></li>
+        <li><a href="#javascript">Georgi Damqnov</a></li>
+        <li><a href="#javascript">Konstantin Mangelov</a></li>
+        <li><a href="#javascript">Eleonora Mangelova</a></li>
+        <li><a href="#javascript">Stoyan Mangelov</a></li>
+        <li><a href="#javascript">Delka Mangelova</a></li>
+        <li><a href="#javascript">Elena Mangelova</a></li>
+        <li><a href="#javascript">Zaprqnka Docheva</a></li>
+        </ul>
+    </div>
+
+    <!-- MAKE CONTENT FOR MORE DATA VIEW -->
+    <div id="person-datails">
+        <!-- WRITE THE NAME OF SELECTED PERSON -->
+        <header>
+            <h2 id="personName"></h2>
+        </header>
+
+        <!-- CLOSE BUTTON  -->
+        <button id="close">X</button>
+
+        <!-- EDIT BUTTON -->
+        <button id="edit">Edit</button>
+
+        <!--  WRAP IN CONTAINER TO MANIPULATE SHOW/HIDE VIEW MODE IN CASE EDIT MODE IS ON/OFF -->
+        <div id="data-container">
+            
+            <!-- EDIT MODE OFF -->
+            <div id="data-info" class="edit-mode-off"> 
+                <p>Phone: <span>0897 70 70 80</span></p>
+                <p>What is your favourite color? : <span>Green</span></p>
+            </div>
+           
+            <!-- EDIT MODE ON -->
+            <div id="data-edit"  class="edit-mode-on">
+                <form id="editDataForm">
+                    <label for="phone">Phone</label>
+                    <input 
+                    type="text" 
+                    id="phone" 
+                    name="phone"
+                    placeholder="Edit your phone number">
+                    <label for="favouriteColor">What is your favourite color?</label>
+                    <input 
+                    type="text" 
+                    id="favouriteColor" 
+                    name="favouriteColor"
+                    placeholder="Edit your favourite color">
+
+                    <span >Submit</span>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="assets/js/js.js"></script>
+</body>
+</html>
